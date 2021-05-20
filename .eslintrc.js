@@ -1,7 +1,7 @@
 module.exports = {
   env: {
     browser: true,
-    es6: true,
+    es2021: true,
   },
   globals: {
     wx: 'readonly',
@@ -12,16 +12,12 @@ module.exports = {
       jsx: false,
     },
   },
-  extends: ['vue', 'standard', 'plugin:vue/recommended'],
+  extends: ['vue', 'standard', 'plugin:vue/essential'],
   plugins: ['prettier', 'standard', 'import', 'node', 'promise', 'vue'],
   rules: {
     'prettier/prettier': 'error',
-    'prefer-const': [
-      'error',
-      {
-        destructuring: 'any',
-        ignoreReadBeforeAssign: true,
-      },
-    ],
+    'prefer-const': 'error',
+    'no-console': 'error',
+    'no-debugger': "error"
   },
 }

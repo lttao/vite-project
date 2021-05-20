@@ -13,7 +13,7 @@ module.exports = {
     },
   },
   extends: ['vue', 'standard', 'plugin:vue/essential'],
-  plugins: ['prettier', 'standard', 'import', 'node', 'promise', 'vue'],
+  plugins: ['import', 'node', 'promise', 'vue'],
   rules: {
     'prettier/prettier': 'error',
     'prefer-const': 'error',
